@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'josefin Sans', sans-serif;
+}
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image:  linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)) ,url(/img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo {
+    color: aliceblue;
+    font-size: 50px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+span{
+    color: darkorange;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+ul li a:hover{
+    color: darkorange;
+    transition-duration: .4s;
+}
+.btn{
+    color: aliceblue;
+    background-color: darkorange;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 2px solid transparent;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: transform .4ms;
+}
+.btn:hover{
+    transform: scale(1.2) ;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h1{
+    color: aliceblue;
+    font-size: 75px;
+    margin: 20px 0 20px;
+}
+h2{
+    color: aliceblue;
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+h3{
+    color: antiquewhite;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.email form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.email input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid darkorange;
+    outline: none;
+    border-radius: 30px;
+}
+.email input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    background-color: darkorange;
+    border-radius: 30px;
+    color: aliceblue;
+    box-shadow: 0px 0px 5px #000, 0px 0px 5px #858585;
+    top: 234px;
+    right: 8px;
+    cursor: pointer;
+}
+.email .submit:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
